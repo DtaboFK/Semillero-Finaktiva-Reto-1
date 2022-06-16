@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Semillero</title>
+</head>
+<body>
+    <section>
+        <div class="container container-lg">
+            <aside>
+                <div class="aside-img">
+                    <img src="assets/img/calculator-alt.svg" alt="calculator" />&nbsp;&nbsp;
+                    <h2>Operator FK</h2>
+                    <p>Ingresa números para ser operados según el caso</p>
+                </div>
+                <ul id="list">
+                </ul>
+            </aside>
+            <div class="container-right">
+                <div class="container-form">
+                    <h2 >Ingresa los datos</h2>
+                    <form id="form">
+                        <div class="input-group">
+                            <label for="numero" class="input-fill">
+                                <input type="number" name="numero" id="numero" required />
+                                <span class="input-label">Ingrese un número</span>
+                                <i class="uil uil-dialpad-alt"></i>
+                            </label>
+                            <button type="button" id="btnAdd" class="btn">Agregar</button>
+                        </div>
+                    </form>
+                    <form id="operator">
+                        <div class="input-group">
+                            <label class="input-fill">
+                                <select id="selectMath">
+                                    <option selected disabled>Seleccione una opción</option>
+                                    <option value="1">Ordenar de menor a mayor</option>
+                                    <option value="2">Ordenar de mayor a menor</option>
+                                    <option value="3">Sumar todos</option>
+                                    <option value="4">Multiplicar por si mismo</option>
+                                </select>
+                                <span class="input-label">Operaciones disponibles</span>
+                                <i class="uil uil-abacus"></i>
+                            </label>
+                        </div>
+                        <div class="input-group hide" id="resultContainer">
+                            <label class="input-fill">
+                                <input type="text" id="result" readonly />
+                                <span class="input-label">Resultado de la suma</span>
+                                <i class="uil uil-equal-circle"></i>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <button type="button" id="btnClear" class="btn">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/main.js" type="text/javascript" defer></script>
+</body>
+</html>
